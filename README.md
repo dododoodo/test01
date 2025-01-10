@@ -31,3 +31,10 @@ h1{ color:red; }
 `박스만들기`
 
 <table></table>
+
+![언어명](url)
+
+![javascript](https://img.shields.io/badge/javascript-grey?style=for-the-badge&logo=javascript&logoColor=white)
+
+😆
+
