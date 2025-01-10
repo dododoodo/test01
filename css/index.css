@@ -1,0 +1,419 @@
+@import url('./reset.css');
+@import url('./common.css');
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 10;
+}
+
+.header-wrap {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header-nav {
+    display: flex;
+    align-items: baseline;
+}
+
+.header-nav>h1 {
+    margin-right: 50px;
+}
+
+.header-nav>h1>a {}
+
+.header-nav>h1>a>img {}
+
+.header-nav>nav {}
+
+.header-nav>nav>a {
+    color: #fff;
+    font-weight: 500;
+    padding: 0 25px;
+    position: relative;
+}
+
+.header-nav>nav>a::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #fff;
+    width: 0;
+    transition: all .3s ease;
+}
+
+.header-nav>nav>a:hover::after {
+    width: 100%;
+}
+
+
+.header-icons {}
+
+.header-icons .ic-lang {
+    font-family: 'Material Symbols Outlined';
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.header-icons .trigger-menu {
+    width: 20px;
+    height: 13px;
+    position: relative;
+}
+
+.header-icons .trigger-menu>span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transition: all .3s ease;
+}
+
+
+.header-icons .trigger-menu>span:nth-of-type(1) {
+    top: 0;
+}
+
+.header-icons .trigger-menu>span:nth-of-type(2) {
+    top: 50%;
+}
+
+.header-icons .trigger-menu>span:nth-of-type(3) {
+    top: 100%;
+}
+
+.header-icons .trigger-menu:hover>span:nth-of-type(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.header-icons .trigger-menu:hover>span:nth-of-type(2) {
+    top: 50%;
+    opacity: 0;
+}
+
+.header-icons .trigger-menu:hover>span:nth-of-type(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+/* main */
+
+.spot {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.spot>iframe {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    opacity: 1;
+    width: 2435.56px;
+    height: 1370px;
+}
+
+.spot>div {
+    width: 1400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.spot>div>b {
+    color: #fff;
+    font-size: 3.3rem;
+    line-height: 1.4;
+}
+
+.spot>div>a {
+    color: #fff;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.spot>div>a::after {
+    content: 'arrow_outward';
+    font-family: 'Material Symbols Outlined';
+}
+
+.spot>div>a::before {
+    content: '';
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1400px;
+}
+
+/* section */
+
+section {
+    padding: 100px 0;
+}
+
+section>article {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+section>article>h2 {}
+
+section>article>b {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    color: #000;
+    margin: 45px 0 70px;
+}
+
+.con-business {
+    display: flex;
+    
+}
+
+.con-business>li {
+    width: 20%;
+}
+.con-business>li>a {
+    width: 100%;
+    position: relative;
+}
+.con-business>li>a>img {
+    width: 100%;
+}
+.con-business>li>a>span {
+    position: absolute;
+    left: 0; top: 0;
+    right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    padding: 60% 0 16px;
+    transition: all .3s ease;
+}
+
+.con-business>li>a:hover>span {
+    padding: 0% 0 16px
+}
+
+.bg-gray-s1 {background-color: #f1f1f1;}
+.bg-gray-s2 {background-color: #f3f3f3; overflow: hidden;}
+
+.mt100 {
+    margin-top:  100px;
+}
+
+.mt100 {
+    margin-top:  100px;
+}
+
+.mt100 {
+    margin-top:  100px;
+}
+
+.con-pr {
+    display: flex;
+    justify-content: space-between;
+}
+.con-pr>figure {
+    position: relative;
+    width: 32%;
+    overflow: hidden;
+}
+.con-pr>figure>a>img {
+    width: 100%;
+    transition: 0.5s;
+}
+.con-pr>figure:hover>a>img {
+    transform: scale(1.2);
+}
+.con-pr>figure>a>figcaption {
+    color: #fff;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+/* Swiper */
+
+.swiper {overflow: visible;}
+
+.swiper-wrapper img {width: 100%;}
+
+.swiper-pagination {
+    left: auto !important;
+    top: -100px !important;
+    right: 0 !important;
+    bottom: auto !important;
+    width: auto !important;
+}
+.swiper-slide {
+    opacity: 0.3;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+}
+
+/* div */
+
+div>article {
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.tx{
+    padding: 180px 0;
+}
+
+.tx>h2 {
+    font-size: 3.3rem;
+}
+.tx>b {
+    margin: 60px 0;
+    font-size: 1.7rem;
+}
+.tx>p {
+    font-size: 1.0rem;
+}
+
+.ic {
+    position: absolute;
+    right: 0;
+    bottom: 62px;
+}
+
+.ic>a {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.ic>a::after {
+    content: 'arrow_outward';
+    font-family: 'Material Symbols Outlined';
+    margin-left: 5px;
+}
+
+footer {
+    margin: 130px 0 0;
+    background-image: url('../img/bg_footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 115px 260px;
+}
+
+footer>div {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.cont1 {
+    position: relative;
+}
+
+.uls {
+    width: 923px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.uls>ul {
+    
+    color: #fff;
+}
+.uls>ul>li>a {
+    color: #fff;
+    font-size: 1.0rem;
+    font-weight: 200;
+}
+
+.bold1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 36px;
+}
+
+.bol {
+    text-align: center;
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 98px;
+    margin-bottom: 70px;
+    border-top: solid 2px #fff;
+}
+
+.bol>b {
+    width: 100%;
+    color: #fff;
+    font-weight: 200;
+    margin: 32px 0 0;
+}
+
+.box1 {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.box1>div>a {
+    width: 286px;
+    border: solid 1px #fff;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1>div>a>b {
+    font-size: 0.8rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1>div>a::after {
+    color: #fff;
+    content: 'keyboard_arrow_down';
+    font-family: 'Material Symbols Outlined';
+}
+
+.box1>a {
+    font-size: 0.8rem;
+    margin: 30px 0 0 20px;
+    color: #fff;
+}
+
+.insta {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
